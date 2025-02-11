@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Telugu X Yt Hacks Mods</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="logo.png" type="image/png">
+        <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h2>Enter Login Key</h2>
+            <input type="password" id="keyInput" placeholder="Enter key">
+            <button onclick="login()">Login</button>
+        </div>
+        <footer>
+            <p>© 2021 Telugu X Yt Hacks</p>
+        </footer>
+    </div>
+    <script>
+            // Check if user already logged in
+    if (localStorage.getItem("loggedIn")) {
+        window.location.href = "game.html"; // Redirect if already logged in
+    }
+
+    function login() {
+        const key = document.getElementById("keyInput").value;
+        const correctKey = "123456";
+
+        if (key === correctKey) {
+            localStorage.setItem("loggedIn", true);
+            alert("Login successful!");
+            window.location.href = "game.html"; // Redirect to a new page
+        } else {
+            alert("Invalid key!");
+        }
+    }
+    </script>
+    <script src="script.js"></script>   
+</body>
+</html>
